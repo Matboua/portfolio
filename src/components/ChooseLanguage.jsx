@@ -25,7 +25,7 @@ export default function ChooseLanguage() {
 					className="w-6"
 					alt={`${selectedLanguage.label} Flag`}
 				/>
-				{selectedLanguage.label.slice(1, 3)}
+				{selectedLanguage.label.substring(0, 2)}
 			</button>
 			{isOpen && (
 				<div
@@ -46,7 +46,7 @@ export default function ChooseLanguage() {
 								className="w-6"
 								alt={`${lang.label} Flage`}
 							/>
-							{lang.label.slice(1, 3)}
+							{lang.label.substring(0, 2)}
 						</button>
 					))}
 				</div>
