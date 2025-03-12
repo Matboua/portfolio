@@ -5,12 +5,12 @@ export default function ChooseLanguage() {
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedLanguage, setSelectedLanguage] = useState({
 		code: "GB",
-		label: "English",
+		label: "En",
 	});
 	const languages = [
-		{ code: "GB", label: "English" },
-		{ code: "DE", label: "Deutsch" },
-		{ code: "FR", label: "Français" },
+		{ code: "GB", label: "En" },
+		{ code: "DE", label: "De" },
+		{ code: "FR", label: "Fr" },
 	];
 	return (
 		<div className="relative z-20">
@@ -25,7 +25,7 @@ export default function ChooseLanguage() {
 					className="w-6"
 					alt={`${selectedLanguage.label} Flag`}
 				/>
-				{selectedLanguage.label.substring(0, 2)}
+				{selectedLanguage.label}
 			</button>
 			{isOpen && (
 				<div
@@ -46,7 +46,7 @@ export default function ChooseLanguage() {
 								className="w-6"
 								alt={`${lang.label} Flage`}
 							/>
-							{lang.label.substring(0, 2)}
+							{lang.label}
 						</button>
 					))}
 				</div>
