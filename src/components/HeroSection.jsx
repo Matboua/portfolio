@@ -13,6 +13,7 @@ import {
 	User,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Cursor, Typewriter } from "react-simple-typewriter";
 
 export default function HeroSection() {
 	const { t } = useTranslation();
@@ -35,12 +36,25 @@ export default function HeroSection() {
 								className="self-end -ml-2  bg-blue-600  text-neutral-100 rounded-full"
 							/>
 						</div>
-						<p className="font-medium text-5xl">
+						<p className="font-bold text-2xl lg:text-4xl">
 							{t("hero.Hello, I'm")} Oussama Matboua
 						</p>
-						<p className="text-2xl">{t("hero.Full Stack Developer")}</p>
-						<p className="text-2xl">{t("hero.Problem Solver")}</p>
-						<p className="text-2xl">{t("hero.Software Developer")}</p>
+						<div className="flex text-xl lg:text-2xl">
+							<span>
+								<Typewriter
+									words={[
+										t("hero.Full Stack Developer"),
+										t("hero.Problem Solver"),
+										t("hero.Software Developer"),
+									]}
+									loop={true}
+									typeSpeed={100}
+								/>
+							</span>
+							<span className="text-pink-600">
+								<Cursor />
+							</span>
+						</div>
 						<p className="dark:text-neutral-400 text-neutral-700">
 							{t("hero.description")}
 						</p>
@@ -64,34 +78,34 @@ export default function HeroSection() {
 					<div className="flex gap-3 items-center">
 						<a
 							href="#"
-							className="flex gap-3 items-center dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-5 pr-6 py-3 rounded-full bg-gradient-to-r from-blue-900  to-pink-600/50 border border-neutral-100"
+							className="flex gap-3 items-center dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-5 pr-6 py-3 rounded-full bg-gradient-to-r from-blue-900 to-pink-600/50 border border-neutral-100 dark:border-neutral-300"
 						>
 							<FileUser size={20} />
 							<p>{t("hero.Download CV")}</p>
 						</a>
 						<a
 							href="#"
-							className="dark:bg-neutral-800 bg-neutral-400 text-neutral-100 p-3 rounded-full"
+							className="dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 p-2.5 rounded-full"
 						>
 							<Github size={23} />
 						</a>
 						<a
 							href="#"
-							className="dark:bg-neutral-800 bg-neutral-400 text-neutral-100 p-3 rounded-full"
+							className="dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 p-2.5 rounded-full"
 						>
 							<Linkedin size={23} />
 						</a>
 					</div>
 					<div className="flex gap-3 items-center">
-						<div className="flex gap-3 items-center text-sm dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-4 pr-5 py-2 rounded-full">
+						<div className="flex gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2 md:pl-4 pr-2 md:pr-5 py-2.5 rounded-full">
 							<CodeXml size={20} />
 							<p>Front-End</p>
 						</div>
-						<div className="flex gap-3 items-center text-sm dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-4 pr-5 py-2 rounded-full">
+						<div className="flex gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2 md:pl-4 pr-2 md:pr-5 py-2.5 rounded-full">
 							<Database size={20} />
 							<p>Back-End</p>
 						</div>
-						<div className="flex gap-3 items-center text-sm dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-4 pr-5 py-2 rounded-full">
+						<div className="flex gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2 md:pl-4 pr-2 md:pr-5 py-2.5 rounded-full">
 							<Command size={20} />
 							<p>Full-Stack</p>
 						</div>

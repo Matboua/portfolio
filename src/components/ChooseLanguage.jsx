@@ -18,19 +18,19 @@ export default function ChooseLanguage() {
 				onClick={() => {
 					setIsOpen(!isOpen);
 				}}
-				className="w-32 flex justify-center items-center cursor-pointer gap-2 border dark:border-gray-500 hover:dark:bg-white/15 hover:bg-gray-400/10 border-gray-400 p-2 rounded-2xl bg-white/10"
+				className="w-32 flex justify-center items-center cursor-pointer gap-2 border dark:border-gray-600 hover:dark:bg-white/15 hover:bg-gray-400/10 border-gray-400 p-2 rounded-2xl bg-white/10"
 			>
 				<Flag
 					code={selectedLanguage.code}
 					className="w-6"
 					alt={`${selectedLanguage.label} Flag`}
 				/>
-				{selectedLanguage.label}
+				{selectedLanguage.label.slice(1, 3)}
 			</button>
 			{isOpen && (
 				<div
 					id="languages"
-					className="w-32 absolute top-11.5 dark:bg-gray-700/90 bg-gray-100 border border-gray-400 dark:border-gray-500 rounded-2xl overflow-hidden"
+					className="w-32 absolute top-11.5 dark:bg-gray-700/90 bg-gray-100 border border-gray-400 dark:border-gray-600 rounded-2xl overflow-hidden"
 				>
 					{languages.map((lang) => (
 						<button
@@ -39,14 +39,14 @@ export default function ChooseLanguage() {
 								setIsOpen(!isOpen);
 							}}
 							key={lang.code}
-							className="w-full flex justify-center items-center cursor-pointer gap-2 border-b border-gray-400 dark:border-gray-500 backdrop-blur-lg hover:dark:bg-white/15 hover:bg-gray-200 py-2"
+							className="w-full flex justify-center items-center cursor-pointer gap-2 border-b border-gray-400 dark:border-gray-600 backdrop-blur-lg hover:dark:bg-white/15 hover:bg-gray-200 py-2"
 						>
 							<Flag
 								code={lang.code}
 								className="w-6"
 								alt={`${lang.label} Flage`}
 							/>
-							{lang.label}
+							{lang.label.slice(1, 3)}
 						</button>
 					))}
 				</div>
