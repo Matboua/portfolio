@@ -25,7 +25,7 @@ export default function ChooseLanguage() {
 					className="w-6"
 					alt={`${selectedLanguage.label} Flag`}
 				/>
-				{selectedLanguage.label}
+				{selectedLanguage.code}
 			</button>
 			{isOpen && (
 				<div
@@ -44,9 +44,9 @@ export default function ChooseLanguage() {
 							<Flag
 								code={lang.code}
 								className="w-6"
-								alt={`${lang.label} Flage`}
+								alt={`${lang.code} Flage`}
 							/>
-							{lang.label}
+							{lang.code}
 						</button>
 					))}
 				</div>

@@ -18,13 +18,13 @@ import { Cursor, Typewriter } from "react-simple-typewriter";
 export default function HeroSection() {
 	const { t } = useTranslation();
 	return (
-		<section className="min-h-[calc(100vh-76px)] flex items-center justify-center w-full py-4 sm:py-8 md:py-0">
+		<section className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-4 sm:py-8 md:py-0">
 			<div className="flex items-center justify-center w-full px-3 sm:p-0 sm:w-10/12">
 				<div className="flex flex-col gap-5">
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-3">
 							<div className="relative flex w-fit">
-								<div className="before:content-[''] before:absolute before:top-0 before:left-0 before:w-[103%] before:h-[103%] before:bg-gradient-to-r before:from-pink-900 before:to-blue-900 before:rounded-full"></div>
+								<div className="before:content-[''] before:absolute before:top-0 before:left-0 before:w-[103%] before:h-[103%] before:bg-gradient-to-r before:from-pink-700 before:to-blue-700 before:rounded-full"></div>
 								<img
 									src="/me.png"
 									alt="Matboua Profile"
@@ -78,7 +78,7 @@ export default function HeroSection() {
 					<div className="flex gap-3 items-center">
 						<a
 							href="#"
-							className="flex gap-3 items-center dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-5 pr-6 py-3 rounded-full bg-gradient-to-r from-blue-900 to-pink-600/50 border border-neutral-100 dark:border-neutral-300"
+							className="flex gap-3 items-center dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-5 pr-6 py-3 rounded-full bg-gradient-to-r from-blue-700 to-pink-700 border border-neutral-100 dark:border-neutral-100"
 						>
 							<FileUser size={20} />
 							<p>{t("hero.Download CV")}</p>
