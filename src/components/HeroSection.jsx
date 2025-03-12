@@ -19,7 +19,7 @@ export default function HeroSection() {
 	const { t } = useTranslation();
 	return (
 		<section className="min-h-[calc(100vh-76px)] flex items-center justify-center w-full py-8 md:py-0">
-			<div className="flex items-center justify-center  w-10/12">
+			<div className="flex items-center justify-center w-full px-3 sm:p-0 sm:w-10/12">
 				<div className="flex flex-col gap-5">
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-3">
