@@ -1,19 +1,10 @@
 import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
 export default function App() {
 	return (
-		<div className="dark:text-gray-300 text-gray-700 dark:bg-gray-800 bg-gray-100 h-[200vh] pt-[80px]">
+		<div className="dark:text-neutral-300 text-neutral-800 dark:bg-neutral-900 bg-neutral-100 min-h-[200vh] pt-[76px]">
 			<Header />
-			<p className="font-bold text-2xl">
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti cum
-				excepturi nisi, nam reprehenderit dicta! Consectetur. Lorem, ipsum dolor
-				sit amet consectetur adipisicing elit. Molestiae consectetur possimus
-				illum non quam dicta eligendi praesentium neque. Voluptate minima porro
-				nemo officiis dolorem, rerum blanditiis recusandae laudantium cupiditate
-				est? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor
-				perspiciatis sit delectus optio nemo hic magnam magni, accusamus
-				repellat explicabo! Suscipit aliquid similique amet iusto praesentium
-				eveniet illum sint consequatur!
-			</p>
+			<HeroSection />
 		</div>
 	);
 }

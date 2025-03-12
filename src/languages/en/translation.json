@@ -1,0 +1,20 @@
+{
+	"header": {
+		"home": "home",
+		"about": "about",
+		"experience": "experience",
+		"projects": "projects",
+		"skills": "skills",
+		"education": "education",
+		"contact": "contact"
+	},
+	"hero": {
+		"Hello, I'm": "Hello, I'm",
+		"Full Stack Developer": "Full Stack Developer",
+		"Problem Solver": "Problem Solver",
+		"Software Developer": "Software Developer",
+		"description": "Specialized Technician in Digital Development, a creative Full Stack Developer with an analytical mindset, curiosity, and a passion for IT.",
+		"birthdate": "02/05/2002",
+		"Download CV": "Download CV"
+	}
+}

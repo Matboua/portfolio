@@ -1,0 +1,1 @@
+npm install framer-motion three react-intersection-observer @react-three/drei @react-three/fibre

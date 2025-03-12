@@ -1,0 +1,20 @@
+{
+	"header": {
+		"home": "accueil",
+		"about": "à propos",
+		"experience": "expérience",
+		"projects": "projets",
+		"skills": "compétences",
+		"education": "éducation",
+		"contact": "contact"
+	},
+	"hero": {
+		"Hello, I'm": "Bonjour, je suis",
+		"Full Stack Developer": "Développeur Full Stack",
+		"Problem Solver": "Résolveur de problèmes",
+		"Software Developer": "Développeur logiciel",
+		"description": "Technicien spécialisé en développement numérique, un développeur Full Stack créatif avec un esprit analytique, de la curiosité et une passion pour l'informatique.",
+		"birthdate": "02/05/2002",
+		"Download CV": "Télécharger le CV"
+	}
+}
