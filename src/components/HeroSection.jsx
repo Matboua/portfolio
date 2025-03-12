@@ -62,7 +62,7 @@ export default function HeroSection() {
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-4 items-center">
 							<Phone size={20} className="text-blue-600" />
-							<p>{t("hero.02/05/2002")}</p>
+							<p>{t("hero.birthday")}</p>
 						</div>
 						<div className="flex gap-4 items-center">
 							<User size={20} className="text-blue-600" />

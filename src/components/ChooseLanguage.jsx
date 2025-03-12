@@ -18,7 +18,7 @@ export default function ChooseLanguage() {
 				onClick={() => {
 					setIsOpen(!isOpen);
 				}}
-				className="w-32 flex justify-center items-center cursor-pointer gap-2 border dark:border-gray-600 hover:dark:bg-white/15 hover:bg-gray-400/10 border-gray-400 p-2 rounded-2xl bg-white/10"
+				className="w-24 sm:w-32 flex justify-center items-center cursor-pointer gap-2 border dark:border-gray-600 hover:dark:bg-white/15 hover:bg-gray-400/10 border-gray-400 p-2 rounded-2xl bg-white/10"
 			>
 				<Flag
 					code={selectedLanguage.code}
@@ -30,7 +30,7 @@ export default function ChooseLanguage() {
 			{isOpen && (
 				<div
 					id="languages"
-					className="w-32 absolute top-11.5 dark:bg-gray-700/90 bg-gray-100 border border-gray-400 dark:border-gray-600 rounded-2xl overflow-hidden"
+					className="w-24 sm:w-32 absolute top-11.5 dark:bg-gray-700/90 bg-gray-100 border border-gray-400 dark:border-gray-600 rounded-2xl overflow-hidden"
 				>
 					{languages.map((lang) => (
 						<button
