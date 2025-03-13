@@ -25,7 +25,7 @@ export default function HeroSection() {
 		fr: "/pdf/Oussama_Matboua_CV_FR.pdf",
 	});
 	return (
-		<section className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-4 sm:py-8">
+		<section className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-5 sm:py-8">
 			<div className="flex items-center justify-center w-full px-5 md:px-0 md:w-11/12 lg:w-10/12">
 				<div className="flex flex-col gap-5">
 					<div className="flex flex-col gap-3">
@@ -108,15 +108,15 @@ export default function HeroSection() {
 						</a>
 					</div>
 					<div className="flex justify-start gap-1.5 sm:gap-3 items-center">
-						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full">
+						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full text-nowrap">
 							<CodeXml size={20} />
 							<p>Front-End</p>
 						</div>
-						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full">
+						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full text-nowrap">
 							<Database size={20} />
 							<p>Back-End</p>
 						</div>
-						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full">
+						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full text-nowrap">
 							<Command size={20} />
 							<p>Full-Stack</p>
 						</div>
