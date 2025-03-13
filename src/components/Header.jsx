@@ -18,7 +18,7 @@ export default function Header() {
 					<div className="logo">
 						<a
 							href="#"
-							className="text-lg sm:text-xl font-bold flex items-center gap-5 bg-gradient-to-r from-blue-900  to-pink-600  text-transparent bg-clip-text"
+							className="text-lg sm:text-xl font-bold flex items-center gap-2 lg:gap-5 bg-gradient-to-r from-blue-900  to-pink-600  text-transparent bg-clip-text"
 						>
 							<span>&lt; Matboua.</span>
 							<span> /&gt;</span>
