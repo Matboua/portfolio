@@ -96,16 +96,16 @@ export default function HeroSection() {
 							<Linkedin size={23} />
 						</a>
 					</div>
-					<div className="flex gap-3 items-center">
-						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2 md:pl-4 pr-2 md:pr-5 py-2.5 rounded-full">
+					<div className="flex justify-center sm:justify-start gap-1.5 sm:gap-3 items-center">
+						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full">
 							<CodeXml size={20} />
 							<p>Front-End</p>
 						</div>
-						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2 md:pl-4 pr-2 md:pr-5 py-2.5 rounded-full">
+						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full">
 							<Database size={20} />
 							<p>Back-End</p>
 						</div>
-						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2 md:pl-4 pr-2 md:pr-5 py-2.5 rounded-full">
+						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full">
 							<Command size={20} />
 							<p>Full-Stack</p>
 						</div>
