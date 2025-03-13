@@ -68,11 +68,6 @@ export default function HeroSection() {
 					</div>
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-4 items-center">
-							<User size={20} className="text-blue-600" />
-
-							<p>{t("hero.birthday")}</p>
-						</div>
-						<div className="flex gap-4 items-center">
 							<Mail size={20} className="text-blue-600" />
 							<a href="mailto:matbouaoussama@gmail.com">
 								matbouaoussama@gmail.com
@@ -82,7 +77,12 @@ export default function HeroSection() {
 							<Phone size={20} className="text-blue-600" />
 							<a href="tel:+212605776855">+212 605-776-855</a>
 						</div>
+						<div className="flex gap-4 items-center">
+							<User size={20} className="text-blue-600" />
+							<p>{t("hero.birthday")}</p>
+						</div>
 					</div>
+
 					<div className="flex gap-3 items-center">
 						<a
 							href={cvFiles[i18n.language]}
