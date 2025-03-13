@@ -62,12 +62,8 @@ export default function ChooseLanguage() {
 								className="w-6"
 								alt={`${lang.label} Flage`}
 							/>
-							<span className="hidden xs:inline-block">
-								{selectedLanguage.label}
-							</span>
-							<span className="xs:hidden">
-								{selectedLanguage.label.substring(0, 2)}
-							</span>
+							<span className="hidden xs:inline-block">{lang.label}</span>
+							<span className="xs:hidden">{lang.label.substring(0, 2)}</span>
 						</button>
 					))}
 				</div>
