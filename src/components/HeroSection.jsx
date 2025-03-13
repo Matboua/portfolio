@@ -43,10 +43,10 @@ export default function HeroSection() {
 								className="self-end -ml-2  bg-blue-600  text-neutral-100 rounded-full"
 							/>
 						</div>
-						<p className="font-bold text-2xl lg:text-4xl">
+						<p className="font-bold text-xl xs:text-2xl lg:text-4xl text-nowrap">
 							{t("hero.Hello, I'm")} Oussama Matboua
 						</p>
-						<div className="flex text-xl lg:text-2xl">
+						<div className="flex text-lg xs:text-xl lg:text-2xl">
 							<span>
 								<Typewriter
 									words={[

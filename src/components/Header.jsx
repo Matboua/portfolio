@@ -9,7 +9,7 @@ export default function Header() {
 	const { i18n, t } = useTranslation();
 	return (
 		<header
-			className={`fixed top-0 flex justify-center w-full pt-4 bg-white/55 dark:bg-neutral-800/80 backdrop-blur-sm  before:content-[''] before:absolute before:top-0 before:cursor-pointer  before:-left-[100%] before:w-full before:h-full before:bg-gradient-to-r dark:before:from-gray-700/10 dark:before:via-gray-700/20 dark:before:to-gray-700/10  before:from-gray-300/10 before:via-gray-300/20 before:to-gray-300/10 hover:before:-left-[-100%] before:transition-all before:duration-500 after:content[''] after:absolute after:bottom-0 after:left-[-13%] after:w-[126%] after:rounded-full after:h-[2.5px] after:bg-gradient-to-r after:from-pink-900 after:to-blue-900 after:transition-all after:duration-700 z-50 ${
+			className={`fixed top-0 flex justify-center w-full pt-4 bg-white/55 dark:bg-neutral-800/80 backdrop-blur-sm  before:content-[''] before:absolute before:top-0 before:cursor-pointer  before:-left-[100%] before:w-full before:h-full before:bg-gradient-to-r dark:before:from-gray-700/10 dark:before:via-gray-700/20 dark:before:to-gray-700/10  before:from-gray-300/10 before:via-gray-300/20 before:to-gray-300/10 hover:before:-left-[-100%] before:transition-all before:duration-500 after:content[''] after:absolute after:bottom-0 after:left-[-13%] after:w-[126%] after:rounded-full after:h-[2.5px] after:bg-gradient-to-r after:from-pink-600 after:to-blue-900 after:transition-all after:duration-700 z-50 ${
 				isNav ? "pb-3" : "pb-4.5"
 			}`}
 		>
