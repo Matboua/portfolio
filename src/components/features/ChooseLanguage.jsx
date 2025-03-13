@@ -11,12 +11,12 @@ export default function ChooseLanguage() {
 	// Change front Language
 	const [isOpen, setIsOpen] = useState(false);
 	const [selectedLanguage, setSelectedLanguage] = useState({
-		code: "GB",
-		label: "English",
+		code: "DE",
+		label: "Deutsch",
 	});
 	const languages = [
-		{ code: "GB", label: "English" },
 		{ code: "DE", label: "Deutsch" },
+		{ code: "GB", label: "English" },
 		{ code: "FR", label: "Français" },
 	];
 	return (

@@ -7,11 +7,11 @@ import fr from "./languages/fr/translation.json";
 
 i18next.use(initReactI18next).init({
 	resources: {
-		en: { translation: en },
 		de: { translation: de },
+		en: { translation: en },
 		fr: { translation: fr },
 	},
-	fallbackLng: "en",
+	fallbackLng: "de",
 	interpolation: {
 		escapeValue: false,
 	},

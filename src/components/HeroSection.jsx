@@ -10,16 +10,23 @@ import {
 	Linkedin,
 	Mail,
 	Phone,
+	Target,
 	User,
 } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Cursor, Typewriter } from "react-simple-typewriter";
+import { useState } from "react";
 
 export default function HeroSection() {
-	const { t } = useTranslation();
+	const { i18n, t } = useTranslation();
+	const [cvFiles] = useState({
+		en: "/pdf/Oussama_Matboua_CV_FR.pdf",
+		de: "/pdf/Oussama_Matboua_Lebenslauf.pdf",
+		fr: "/pdf/Oussama_Matboua_CV_FR.pdf",
+	});
 	return (
-		<section className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-4 sm:py-8 md:py-0">
-			<div className="flex items-center justify-center w-full px-3 sm:p-0 sm:w-10/12">
+		<section className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-4 sm:py-8">
+			<div className="flex items-center justify-center w-full px-5 md:px-0 md:w-11/12 lg:w-10/12">
 				<div className="flex flex-col gap-5">
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-3">
@@ -61,42 +68,46 @@ export default function HeroSection() {
 					</div>
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-4 items-center">
-							<Phone size={20} className="text-blue-600" />
+							<User size={20} className="text-blue-600" />
+
 							<p>{t("hero.birthday")}</p>
 						</div>
 						<div className="flex gap-4 items-center">
-							<User size={20} className="text-blue-600" />
+							<Mail size={20} className="text-blue-600" />
 							<a href="mailto:matbouaoussama@gmail.com">
 								matbouaoussama@gmail.com
 							</a>
 						</div>
 						<div className="flex gap-4 items-center">
-							<Mail size={20} className="text-blue-600" />
+							<Phone size={20} className="text-blue-600" />
 							<a href="tel:+212605776855">+212 605-776-855</a>
 						</div>
 					</div>
 					<div className="flex gap-3 items-center">
 						<a
-							href="#"
+							href={cvFiles[i18n.language]}
+							download
 							className="flex gap-3 items-center dark:bg-neutral-800 bg-neutral-400 text-neutral-100 pl-5 pr-6 py-3 rounded-full bg-gradient-to-r from-blue-700 to-pink-700 border border-neutral-100 dark:border-neutral-100"
 						>
 							<FileUser size={20} />
-							<p>{t("hero.Download CV")}</p>
+							{t("hero.Download CV")}
 						</a>
 						<a
 							href="#"
+							target="_blank"
 							className="dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 p-2.5 rounded-full"
 						>
 							<Github size={23} />
 						</a>
 						<a
 							href="#"
+							target="_blank"
 							className="dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 p-2.5 rounded-full"
 						>
 							<Linkedin size={23} />
 						</a>
 					</div>
-					<div className="flex justify-center sm:justify-start gap-1.5 sm:gap-3 items-center">
+					<div className="flex justify-start gap-1.5 sm:gap-3 items-center">
 						<div className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-2.5 rounded-full">
 							<CodeXml size={20} />
 							<p>Front-End</p>
@@ -114,7 +125,7 @@ export default function HeroSection() {
 				<div className="hidden md:block">
 					<Lottie
 						animationData={laptopAnimation}
-						className="w-[600px] mt-20 -mr-30"
+						className="md:w-[450px] lg:w-[600px] mt-20 -mr-30"
 					/>
 				</div>
 			</div>
