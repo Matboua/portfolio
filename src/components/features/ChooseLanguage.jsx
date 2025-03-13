@@ -25,14 +25,18 @@ export default function ChooseLanguage() {
 				onClick={() => {
 					setIsOpen(!isOpen);
 				}}
-				className="w-32 flex justify-center items-center cursor-pointer gap-2 border border-gray-400 p-2 rounded-2xl dark:border-gray-500 hover:dark:bg-white/15 hover:bg-neutral-200/80 dark:bg-white/10 bg-neutral-200/40 "
+				className="xs:w-32 flex justify-center items-center cursor-pointer gap-2 border border-gray-400 p-2 rounded-2xl dark:border-gray-500 hover:dark:bg-white/15 hover:bg-neutral-200/80 dark:bg-white/10 bg-neutral-200/40 "
 			>
 				<Flag
 					code={selectedLanguage.code}
 					className="w-6"
 					alt={`${selectedLanguage.label} Flag`}
 				/>
-				{selectedLanguage.label}
+				<span className="hidden xs:inline-block">{selectedLanguage.label}</span>
+				<span className="xs:hidden">
+					{selectedLanguage.label.substring(0, 2)}
+				</span>
+				{/* {selectedLanguage.label} */}
 			</button>
 			{isOpen && (
 				<div
@@ -58,7 +62,12 @@ export default function ChooseLanguage() {
 								className="w-6"
 								alt={`${lang.label} Flage`}
 							/>
-							{lang.label}
+							<span className="hidden xs:inline-block">
+								{selectedLanguage.label}
+							</span>
+							<span className="xs:hidden">
+								{selectedLanguage.label.substring(0, 2)}
+							</span>
 						</button>
 					))}
 				</div>
