@@ -93,14 +93,14 @@ export default function HeroSection() {
 							{t("hero.Download CV")}
 						</a>
 						<a
-							href="#"
+							href="https://github.com/Matboua"
 							target="_blank"
 							className="dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 p-2.5 rounded-full"
 						>
 							<Github size={23} />
 						</a>
 						<a
-							href="#"
+							href="https://www.linkedin.com/in/Matboua"
 							target="_blank"
 							className="dark:bg-neutral-800 bg-white border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 p-2.5 rounded-full"
 						>
