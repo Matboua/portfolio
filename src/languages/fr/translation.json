@@ -16,5 +16,9 @@
 		"description": "Technicien spécialisé en développement numérique, un développeur Full Stack créatif avec un esprit analytique, de la curiosité et une passion pour l'informatique.",
 		"birthday": "02/05/2002",
 		"Download CV": "Télécharger le CV"
+	},
+	"coming": {
+		"title": "Il arrive bientôt...",
+		"description": "Je travaille dur pour vous présenter un portfolio incroyable. Restez à l'écoute!"
 	}
 }
