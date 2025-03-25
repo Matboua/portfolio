@@ -34,7 +34,7 @@ export default function Projects() {
 						Python
 					</a>
 				</div>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-between w-full">
+				<div className="grid grid-cols-1 xm:grid-cols-2 lg:grid-cols-3 xz:grid-cols-4 gap-4 justify-center">
 					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[280px]">
 						<img src="/public/projects/carvoy_react.png" alt="Carvoy React" />
 						<div className="px-5 pb-5 pt-3 flex flex-col gap-1">
