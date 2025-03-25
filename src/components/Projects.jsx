@@ -34,8 +34,9 @@ export default function Projects() {
 						Python
 					</a>
 				</div>
-				<div className="grid grid-cols-1 xm:grid-cols-2 lg:grid-cols-3 xz:grid-cols-4 gap-4 justify-center">
-					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[280px]">
+				<div className="grid grid-cols-1 sm:grid-cols-2 lx:grid-cols-3 2xl:grid-cols-4 gap-7 justify-center md:justify-between">
+					{/* First Project */}
+					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[300px]">
 						<img src="/projects/carvoy_react.png" alt="Carvoy React" />
 						<div className="px-5 pb-5 pt-3 flex flex-col gap-1">
 							{/* Title + description */}
@@ -54,8 +55,9 @@ export default function Projects() {
 							</div>
 						</div>
 					</div>
-					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[280px]">
-						<img src="/public/projects/carvoy_react.png" alt="Carvoy React" />
+					{/* 2 Project */}
+					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[300px]">
+						<img src="/projects/carvoy_react.png" alt="Carvoy React" />
 						<div className="px-5 pb-5 pt-3 flex flex-col gap-1">
 							{/* Title + description */}
 							<p className="font-medium">Carvoy Car Rental</p>
@@ -73,8 +75,9 @@ export default function Projects() {
 							</div>
 						</div>
 					</div>
-					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[280px]">
-						<img src="/public/projects/carvoy_react.png" alt="Carvoy React" />
+					{/* 3 Project */}
+					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[300px]">
+						<img src="/projects/carvoy_react.png" alt="Carvoy React" />
 						<div className="px-5 pb-5 pt-3 flex flex-col gap-1">
 							{/* Title + description */}
 							<p className="font-medium">Carvoy Car Rental</p>
@@ -92,8 +95,9 @@ export default function Projects() {
 							</div>
 						</div>
 					</div>
-					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[280px]">
-						<img src="/public/projects/carvoy_react.png" alt="Carvoy React" />
+					{/* 4 Project */}
+					<div className="border border-neutral-500 rounded-lg overflow-hidden w-[300px]">
+						<img src="/projects/carvoy_react.png" alt="Carvoy React" />
 						<div className="px-5 pb-5 pt-3 flex flex-col gap-1">
 							{/* Title + description */}
 							<p className="font-medium">Carvoy Car Rental</p>
