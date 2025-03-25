@@ -33,7 +33,7 @@ export default function HeroSection() {
 							<div className="relative flex w-fit">
 								<div className="before:content-[''] before:absolute before:top-0 before:left-0 before:w-[103%] before:h-[103%] before:bg-gradient-to-r before:from-pink-700 before:to-blue-700 before:rounded-full"></div>
 								<img
-									src="/me.png"
+									src="/me.webp"
 									alt="Matboua Profile"
 									className="w-24 rounded-full ml-0.5 mt-0.5 border-2 border-neutral-100 dark:border-neutral-900 z-10"
 								/>
