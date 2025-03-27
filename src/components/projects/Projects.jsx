@@ -38,28 +38,28 @@ export default function Projects() {
 				</div>
 				<div className="grid grid-cols-1 sm:grid-cols-2 lx:grid-cols-3 2xl:grid-cols-4 gap-7 justify-center md:justify-between">
 					<Project
-						image="carvoy_react.png"
+						image="carvoy_react.webp"
+						name="Carvoy Car Rental"
+						description="CarVoy – A reliable and user-friendly car rental platform for seamless booking and management."
+						lang1="React"
+						lang2="Tailwind"
+					/>
+					<Project
+						image="ShopLead_Python.webp"
+						name="Shop Lead Management"
+						description="Une plateforme intuitive pour la gestion des articles, des clients et des ventes, optimisant votre activité en toute simplicité."
+						lang1="Python"
+						lang2="Tikinter"
+					/>
+					<Project
+						image="carvoy_react.webp"
 						name="Carvoy Car Rental"
 						description="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
 						lang1="React"
 						lang2="Tailwind"
 					/>
 					<Project
-						image="carvoy_react.png"
-						name="Carvoy Car Rental"
-						description="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
-						lang1="React"
-						lang2="Tailwind"
-					/>
-					<Project
-						image="carvoy_react.png"
-						name="Carvoy Car Rental"
-						description="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
-						lang1="React"
-						lang2="Tailwind"
-					/>
-					<Project
-						image="carvoy_react.png"
+						image="carvoy_react.webp"
 						name="Carvoy Car Rental"
 						description="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
 						lang1="React"

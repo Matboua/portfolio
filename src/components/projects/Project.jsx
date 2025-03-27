@@ -4,12 +4,12 @@ export default function Project({ image, name, description, lang1, lang2 }) {
 			<img
 				src={`/projects/${image}`}
 				alt="Carvoy React"
-				className="rounded-lg hover:opacity-10 bg-amber-300"
+				className="rounded-lg border-2 dark:border-neutral-700 border-gray-300 h-[172px]"
 			/>
-			<div className="px-5 pb-5 pt-3 flex flex-col gap-1">
+			<div className="p-2 flex flex-col gap-1">
 				{/* Title + description */}
 				<p className="font-medium">{name}</p>
-				<p className="text-sm">{description}</p>
+				<p className="text-sm line-clamp-2">{description}</p>
 				{/* Languages */}
 				<div className="flex gap-2 mt-2">
 					<p className="flex gap-1 sm:gap-3 items-center text-sm dark:bg-neutral-800 bg-neutral-50 border border-neutral-400 dark:border-neutral-600 dark:text-neutral-100 text-neutral-800 pl-2.5 md:pl-4 pr-2.5 md:pr-5 py-1 rounded-full text-nowrap">
