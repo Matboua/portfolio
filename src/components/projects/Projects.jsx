@@ -2,44 +2,35 @@ import Project from "./Project";
 
 export default function Projects() {
 	return (
-		<section
-			id="projects"
-			className="min-h-[calc(100dvh-76px)] flex justify-center w-full py-5 sm:py-8"
-		>
-			<div className="flex flex-col items-center gap-16 w-full px-5 md:px-0 md:w-11/12 lg:w-10/12">
-				<div className="grid grid-cols-2 sm:grid-cols-3 gap-7 sm:gap-x-8 justify-center">
-					<a
-						href="#"
-						className="w-35 xs:w-40 border cursor-pointer dark:border-gray-500 border-gray-400 py-3 sm:py-3.5 text-center rounded  hover:dark:bg-white/10 hover:bg-neutral-100 dark:bg-neutral-800 bg-white"
-					>
-						All Projects
-					</a>
-					<a
-						href="#"
-						className="w-35 xs:w-40 border cursor-pointer dark:border-gray-500 border-gray-400 py-3 sm:py-3.5 text-center rounded  hover:dark:bg-white/10 hover:bg-neutral-100 dark:bg-neutral-800 bg-white"
-					>
-						Front-End
-					</a>
-					<a
-						href="#"
-						className="w-35 xs:w-40 border cursor-pointer dark:border-gray-500 border-gray-400 py-3 sm:py-3.5 text-center rounded  hover:dark:bg-white/10 hover:bg-neutral-100 dark:bg-neutral-800 bg-white"
-					>
-						Back-End
-					</a>
-					<a
-						href="#"
-						className="w-35 xs:w-40 col-span-1 sm:col-span-2 justify-self-center border cursor-pointer dark:border-gray-500 border-gray-400 py-3 sm:py-3.5 text-center rounded  hover:dark:bg-white/10 hover:bg-neutral-100 dark:bg-neutral-800 bg-white"
-					>
-						Full-Stack
-					</a>
-					<a
-						href="#"
-						className="w-35 xs:w-40 ml-0 sm:-ml-[calc(100%+32px)] justify-self-center border cursor-pointer dark:border-gray-500 border-gray-400 py-3 sm:py-3.5 text-center rounded  hover:dark:bg-white/10 hover:bg-neutral-100 dark:bg-neutral-800 bg-white"
-					>
-						Python
-					</a>
-				</div>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lx:grid-cols-3 2xl:grid-cols-4 gap-7 justify-center md:justify-between">
+		<main className="min-h-[calc(100dvh-76px)] flex justify-center w-full py-5 sm:py-8">
+			<div className="flex flex-col md:flex-row gap-5 w-full px-5 md:px-0 md:w-11/12 lg:w-10/12">
+				{/* Left Section */}
+				<section className="flex flex-row flex-wrap justify-center md:justify-start md:flex-col gap-2">
+					<button className="dark:bg-neutral-800 bg-white hover:bg-neutral-300 dark:hover:bg-neutral-700 min-[400px]:px-10 px-5 py-3 rounded-md cursor-pointertext-nowrap w-[calc(50%-24px)] min-[400px]:w-44 border-2 border-pink-700">
+						<span className="opacity-100">All Projects</span>
+					</button>
+					<button className="dark:bg-neutral-800 bg-white hover:bg-neutral-300 dark:hover:bg-neutral-700 min-[400px]:px-10 px-5 py-3 rounded-md cursor-pointertext-nowrap w-[calc(50%-24px)] min-[400px]:w-44">
+						<span className="opacity-50">React</span>
+					</button>
+					<button className="dark:bg-neutral-800 bg-white hover:bg-neutral-300 dark:hover:bg-neutral-700 min-[400px]:px-10 px-5 py-3 rounded-md cursor-pointertext-nowrap w-[calc(50%-24px)] min-[400px]:w-44">
+						<span className="opacity-50">Next.js</span>
+					</button>
+					<button className="dark:bg-neutral-800 bg-white hover:bg-neutral-300 dark:hover:bg-neutral-700 min-[400px]:px-10 px-5 py-3 rounded-md cursor-pointertext-nowrap w-[calc(50%-24px)] min-[400px]:w-44">
+						<span className="opacity-50">Laravel</span>
+					</button>
+					<button className="dark:bg-neutral-800 bg-white hover:bg-neutral-300 dark:hover:bg-neutral-700 min-[400px]:px-10 px-5 py-3 rounded-md cursor-pointertext-nowrap w-[calc(50%-24px)] min-[400px]:w-44">
+						<span className="opacity-50">Woordpress</span>
+					</button>
+				</section>
+				{/* Right section */}
+				<section className="grid grid-cols-1 xm:grid-cols-2 xl:grid-cols-3 gap-5">
+					<Project
+						image="skoolution_nextjs.webp"
+						name="Carvoy Car Rental"
+						description="An educational platform for high school students in Morocco, providing online assessment and learning tools."
+						lang1="Next.js"
+						lang2="Tailwind"
+					/>
 					<Project
 						image="carvoy_react.webp"
 						name="Carvoy Car Rental"
@@ -48,28 +39,21 @@ export default function Projects() {
 						lang2="Tailwind"
 					/>
 					<Project
+						image="portfolio_react.webp"
+						name="<Matboua. /> Portfolio"
+						description="A personal portfolio website with a modern design, showcasing skills and professional experience."
+						lang1="React"
+						lang2="Tailwind"
+					/>
+					<Project
 						image="ShopLead_Python.webp"
-						name="Shop Lead Management"
-						description="Une plateforme intuitive pour la gestion des articles, des clients et des ventes, optimisant votre activité en toute simplicité."
+						name="Shop Lead"
+						description="A desktop inventory management application for tracking products, categories, and sales."
 						lang1="Python"
 						lang2="Tikinter"
 					/>
-					<Project
-						image="carvoy_react.webp"
-						name="Carvoy Car Rental"
-						description="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
-						lang1="React"
-						lang2="Tailwind"
-					/>
-					<Project
-						image="carvoy_react.webp"
-						name="Carvoy Car Rental"
-						description="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem"
-						lang1="React"
-						lang2="Tailwind"
-					/>
-				</div>
+				</section>
 			</div>
-		</section>
+		</main>
 	);
 }

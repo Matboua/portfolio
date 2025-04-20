@@ -30,7 +30,7 @@ export default function HeroSection() {
 			className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-5 sm:py-8"
 		>
 			<div className="flex items-center justify-center w-full px-5 md:px-0 md:w-11/12 lg:w-10/12">
-				<div className="flex flex-col gap-5">
+				<div className="w-full md:w-1/2 flex flex-col gap-5">
 					<div className="flex flex-col gap-3">
 						<div className="flex gap-3">
 							<div className="relative flex w-fit">
@@ -125,11 +125,8 @@ export default function HeroSection() {
 						</div>
 					</div>
 				</div>
-				<div className="hidden md:block">
-					<Lottie
-						animationData={laptopAnimation}
-						className="md:w-[450px] lg:w-[600px] mt-20 -mr-30"
-					/>
+				<div className="md:w-1/2 translate-x-1/4 translate-y-1/6 hidden md:block">
+					<Lottie animationData={laptopAnimation} />
 				</div>
 			</div>
 		</section>
