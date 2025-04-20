@@ -2,7 +2,10 @@ import Project from "./Project";
 
 export default function Projects() {
 	return (
-		<section className="min-h-[calc(100dvh-76px)] flex justify-center w-full py-5 sm:py-8">
+		<section
+			id="projects"
+			className="min-h-[calc(100dvh-76px)] flex justify-center w-full py-5 sm:py-8"
+		>
 			<div className="flex flex-col items-center gap-16 w-full px-5 md:px-0 md:w-11/12 lg:w-10/12">
 				<div className="grid grid-cols-2 sm:grid-cols-3 gap-7 sm:gap-x-8 justify-center">
 					<a

@@ -25,7 +25,10 @@ export default function HeroSection() {
 		fr: "/pdf/Oussama_Matboua_CV_FR.pdf",
 	});
 	return (
-		<section className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-5 sm:py-8">
+		<section
+			id="home"
+			className="min-h-[calc(100dvh-76px)] flex items-center justify-center w-full py-5 sm:py-8"
+		>
 			<div className="flex items-center justify-center w-full px-5 md:px-0 md:w-11/12 lg:w-10/12">
 				<div className="flex flex-col gap-5">
 					<div className="flex flex-col gap-3">
