@@ -1,13 +1,46 @@
-<!DOCTYPE html>
-<html lang="en" class="dark">
-	<head>
-		<meta charset="UTF-8" />
-		<link rel="icon" type="image/svg+xml" href="matboua-favicon.png" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dev Matboua | Portfolio</title>
-	</head>
-	<body>
-		<div id="root"></div>
-		<script type="module" src="/src/main.jsx"></script>
-	</body>
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Oussama Matboua | Systemintegration</title>
+    <meta name="description" content="Oussama Matboua - Absolvent in Cybersicherheit und Cloud-Technologie auf der Suche nach einer Ausbildung zum Fachinformatiker für Systemintegration." />
+    <meta name="keywords" content="Oussama Matboua, Systemintegration, Cybersecurity, Cloud, Linux, DevSecOps, Portfolio" />
+    <meta name="author" content="Oussama Matboua" />
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Oussama Matboua | Systemintegration" />
+    <meta property="og:description" content="Absolvent in Cybersicherheit und Cloud-Technologie auf der Suche nach einer Ausbildung zum Fachinformatiker für Systemintegration." />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Oussama Matboua | Systemintegration" />
+    <meta name="twitter:description" content="Absolvent in Cybersicherheit und Cloud-Technologie auf der Suche nach einer Ausbildung zum Fachinformatiker für Systemintegration." />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/images/portfolio-mark.svg?v=2"/>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+    
+    <!-- Theme initialization to prevent flash -->
+    <script>
+      (function() {
+        const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const override = localStorage.getItem('portfolio-theme-override');
+        document.documentElement.dataset.theme = override === 'dark' || override === 'light'
+          ? override
+          : isDark ? 'dark' : 'light';
+      })();
+    </script>
+  </head>
+  <body class="antialiased">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

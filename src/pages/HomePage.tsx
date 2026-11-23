@@ -1,0 +1,29 @@
+import React from 'react';
+import Header from '../components/layout/Header';
+import Footer from '../components/layout/Footer';
+import HeroSection from '../components/sections/HeroSection';
+import AboutSection from '../components/sections/AboutSection';
+import ApplicationVideoSection from '../components/sections/ApplicationVideoSection';
+import ProjectsSection from '../components/sections/ProjectsSection';
+import SkillsSection from '../components/sections/SkillsSection';
+import OtherSection from '../components/sections/OtherSection';
+
+const HomePage: React.FC = () => {
+  return (
+    <div className="min-h-screen">
+      
+      <Header />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ApplicationVideoSection />
+        <ProjectsSection />
+        <SkillsSection />
+        <OtherSection />
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+export default HomePage;
