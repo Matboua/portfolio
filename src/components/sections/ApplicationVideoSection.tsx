@@ -29,7 +29,7 @@ export default function ApplicationVideoSection() {
         </motion.div>
 
         <motion.div
-          className="mx-auto grid max-w-5xl gap-4 rounded-2xl border border-[var(--card-border)] bg-[var(--card)]/65 p-3 backdrop-blur-xl sm:gap-6 sm:p-6"
+          className="showcase-glass mx-auto grid max-w-5xl gap-4 rounded-2xl border border-[var(--card-border)] p-3 sm:gap-6 sm:p-6"
           initial={reduceMotion ? false : { opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -51,7 +51,7 @@ export default function ApplicationVideoSection() {
               href={youtubeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] px-3.5 py-2 text-sm font-medium text-[var(--accent)] transition-colors hover:border-[var(--accent)]/50 hover:bg-[var(--accent)]/10 focus-visible:outline-2 focus-visible:outline-[var(--accent)]"
+              className="showcase-glass inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] px-3.5 py-2 text-sm font-medium text-[var(--accent)] transition-colors hover:border-[var(--accent)]/50 hover:bg-[var(--accent)]/10 focus-visible:outline-2 focus-visible:outline-[var(--accent)]"
             >
               {t('Watch on YouTube')}
               <ExternalLinkIcon size={15} />

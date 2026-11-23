@@ -1,6 +1,6 @@
 {
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/(links|achievements)/?", "dest": "/index.html" }
+    { "src": "/(links|achievements|certificates)/?", "dest": "/index.html" }
   ]
 }

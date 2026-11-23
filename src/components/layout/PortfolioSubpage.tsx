@@ -1,4 +1,4 @@
-import type { ReactNode } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../../hooks/useLanguage';
@@ -16,6 +16,10 @@ interface PortfolioSubpageProps {
 export default function PortfolioSubpage({ title, description, children }: PortfolioSubpageProps) {
   const { t } = useLanguage();
   const reduceMotion = useReducedMotion();
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' });
+  }, []);
 
   return (
     <div className="flex min-h-screen flex-col bg-[var(--background)] text-[var(--foreground)]">

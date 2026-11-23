@@ -60,7 +60,7 @@ const ProjectsSection: React.FC = () => {
             href={`${githubProfile}?tab=repositories`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] bg-[var(--card)] px-6 py-3 font-medium text-[var(--foreground)] transition-colors hover:border-[var(--accent)]"
+            className="showcase-glass inline-flex items-center gap-2 rounded-full border border-[var(--card-border)] px-6 py-3 font-medium text-[var(--foreground)] transition-colors hover:border-[var(--accent)]"
           >
             <GitHubIcon size={20} />
             {t("View All Projects on GitHub")}
