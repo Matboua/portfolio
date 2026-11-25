@@ -2,8 +2,8 @@ import { motion, useReducedMotion } from 'framer-motion';
 import { useLanguage } from '../../hooks/useLanguage';
 import { ExternalLinkIcon } from '../icons';
 
-const youtubeUrl = 'https://youtu.be/mT4giYQK11Y';
-const embedUrl = 'https://www.youtube.com/embed/mT4giYQK11Y?playsinline=1';
+const youtubeUrl = 'https://youtu.be/91adLUPgtcA';
+const embedUrl = 'https://www.youtube.com/embed/91adLUPgtcA?si=r-BfXCskVmI1AIQL';
 
 export default function ApplicationVideoSection() {
   const { t } = useLanguage();
